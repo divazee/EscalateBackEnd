@@ -33,7 +33,7 @@ app.post('/', async function(req, res){
     }
 })
 
-app.get('/getuser', function(req, res){
+app.get('/getusers', function(req, res){
     User.find({}, function(err, user){
         err ? res.send(err) :
         res.send(user)
